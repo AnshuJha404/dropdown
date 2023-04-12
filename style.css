@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Hammersmith+One&family=Parisienne&family=Suwannaphum:wght@900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Alktara';
+
+}
+body{
+    background-color: green;
+}
+
+.menu-bar{
+    background: lightgreen;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display:inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width:120px;
+    margin: 15px;
+    padding:15px;
+    
+    
+}
+
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+}
+
+.active , .menu-bar ul li:hover{
+    background: green;
+    border-radius: 3px;
+}
+
+.sub-menu1{
+    display:none;
+
+}
+
+.menu-bar ul li:hover .sub-menu1{
+    display:block ;
+    position:absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px ;
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width:150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+   color:red;
+}
+.fa-angle-right{
+    float:right;
+}
+
+.sub-menu2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(0,100,0);
+}
